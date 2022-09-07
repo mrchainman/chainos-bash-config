@@ -1,0 +1,7 @@
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+source ~/.config/bash/bash_aliases
+source ~/.config/bash/bash_exports
+source /usr/share/doc/find-the-command/ftc.bash
+pfetch
+eval "$(starship init bash)"
