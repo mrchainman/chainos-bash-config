@@ -27,3 +27,4 @@ export RUSTUP_HOME="$XDG_DATA_HOME"/rustup
 export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME"/npm/npmrc
 export QT_STYLE_OVERRIDE=kvantum
 export PF_INFO="ascii title os doc uptime pkgs host kernel wm shell editor palette"
+export CHAINOS="$HOME/.data/Development/chainos-development"
