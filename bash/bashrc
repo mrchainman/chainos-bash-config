@@ -3,5 +3,6 @@
 source ~/.config/bash/bash_aliases
 source ~/.config/bash/bash_exports
 source /usr/share/doc/find-the-command/ftc.bash
+source ~/.config/bash/prompt
 chainos-pfetch
-eval "$(starship init bash)"
+source ~/.config/bash/historyrc

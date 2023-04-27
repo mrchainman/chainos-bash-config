@@ -1,6 +1,7 @@
 # Aliases
 alias reload="source ~/.bashrc"
-alias ls="ls -l -h --color=auto --group-directories-first "
+alias ll="ls -l -h --color=auto --group-directories-first "
+alias la="ls -A -l -h --color=auto --group-directories-first "
 alias dir='dir --color=auto'
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
@@ -36,8 +37,10 @@ alias rip="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl"
 # Customs
 alias gls="git ls-files"
 alias gst="git status -uno"
+alias gstu="git status -u --ignored"
 alias se="sudo nvim "
 alias sp="sudo pacman "
+alias udpate="sudo pacman -Syu --ignore chainos-* --overwrite=*"
 alias ss="sudo systemctl "
 alias sj="sudo journalctl "
 alias us="systemctl --user "
@@ -45,12 +48,18 @@ alias uj="journalctl --user "
 alias se="sudo nvim "
 alias op="netstat -tulpn "
 alias pps="ps aux | grep "
+alias lsg="ls -l | grep "
 alias dc="docker-compose "
+alias dm="docker-machine"
 alias esc="setxkbmap -option caps:escape"
 alias dps="docker ps --format=\"Name: {{.Names}}\nStatus: {{.Status}}\""
 alias sshb="ssh -fNT "
 alias sshe="ssh -TO exit "
 alias sshc="ssh -TO check "
-alias add-keys='cd ~/.ssh && ssh-add $(/bin/ls ~/.ssh | grep -Ev "pub|mux|conf|known")'
+alias con="kitty +kitten ssh"
+alias add-keys='cd ~/.ssh && ssh-add $(/bin/ls ~/.ssh | grep -Ev "pub|mux|conf|known") && cd ~'
 alias wip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias ppkg="cp ../../templates/INSTALL.tmpl ./INSTALL && cp ../../templates/PKGBUILD.tmpl ./PKGBUILD"
+alias n="nvim "
+alias panda="docker run --rm -v "$(pwd):/data" -u $(id -u):$(id -g) pandoc/core"
+alias lpanda='docker run --rm -v /home/davidc:/data -u 1000:1000 pandoc/latex'
