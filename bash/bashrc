@@ -6,3 +6,4 @@ source /usr/share/doc/find-the-command/ftc.bash
 source ~/.config/bash/prompt
 chainos-pfetch
 source ~/.config/bash/historyrc
+source ~/.config/bash/helm.sh

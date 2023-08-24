@@ -63,3 +63,6 @@ alias ppkg="cp ../../templates/INSTALL.tmpl ./INSTALL && cp ../../templates/PKGB
 alias n="nvim "
 alias panda="docker run --rm -v "$(pwd):/data" -u $(id -u):$(id -g) pandoc/core"
 alias lpanda='docker run --rm -v /home/davidc:/data -u 1000:1000 pandoc/latex'
+alias mk="minikube"
+alias ssh="source ~/.config/bash/term && ssh"
+alias pr="source ~/.config/bash/prompt && clear"
